@@ -1,0 +1,121 @@
+/* CSS */
+.apps2 {
+  all: unset;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.nine-dots {
+  /* temel nokta */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f6368;
+  display: inline-block;
+
+  /* 8 gölge = 8 ekstra nokta */
+  /* yatay/dikey ofsetleri eşit aralıklarla veriyoruz */
+  box-shadow:
+     -12px -12px #5f6368,  0   -12px #5f6368,  12px -12px #5f6368,
+   -12px   0   #5f6368,                       12px   0   #5f6368,
+   -12px  12px #5f6368,  0    12px #5f6368,  12px  12px #5f6368;
+}
+
+/* (opsiyonel) hover */
+.apps2:hover {
+     background: rgba(0,0,0,.06); 
+
+}
+h1{
+  font-size: 90px;
+  font-family: Arial,  sans-serif;
+  font-weight: bold;
+  letter-spacing: -12px;
+  padding: 20px;
+  
+}
+.yellow  {
+    color: #FBBC05;
+}
+.blue{
+  color: #4285F4;
+}
+.red{
+  color: #EA4335;
+}
+.green{
+  color: #34A853;
+}
+.header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+}
+.header a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+.header a:hover{
+  text-decoration: underline;
+}
+.midle{
+  display: flex;
+  justify-content: center;
+}
+.search-area{
+  display: flex;
+  justify-content: center;
+}
+#search{
+  width: 500px;
+  height: 40px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  padding: 0 15px;
+  font-size: 15px;
+  outline: none;
+  
+}
+#search:focus{
+  border: 1px solid #4285f4;
+}
+#search:hover{
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+.buttons {
+  margin-top: 20px;
+}
+.buttons input{
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin: 5px;
+  padding: 10px  20px;
+  cursor: pointer;
+}
+.buttons input:hover{
+  border: 1px solid #dadce0;
+  box-shadow: 0px 3px 1px rgba(0,0,0,.1);
+}
